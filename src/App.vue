@@ -81,6 +81,10 @@ onMounted(() => {
         padding: 1rem;
         border: 0;
         cursor: pointer;
+
+        &:hover {
+          background-color: darken($color: $green, $amount: 10)
+        }
       }
 
       &__advice {
