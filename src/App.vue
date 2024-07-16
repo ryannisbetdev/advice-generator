@@ -3,7 +3,7 @@ import { onMounted, ref } from 'vue';
 import DiceIcon from 'vue-material-design-icons/Dice5.vue';
 
 const advice = ref(""),
-      key = ref(Math.floor(Math.random() * 100) + 1); 
+      key = ref(Math.floor(Math.random() * 200) + 1);
 
 const getData = async () => {
   key.value = Math.floor(Math.random() * 100) + 1; 
@@ -81,6 +81,7 @@ onMounted(() => {
         padding: 1rem;
         border: 0;
         cursor: pointer;
+        color: #000;
 
         &:hover {
           background-color: darken($color: $green, $amount: 10)
